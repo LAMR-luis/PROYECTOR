@@ -1,0 +1,86 @@
+*{
+	margin: 0.5em;
+	padding: 0em;
+	box-sizing: border-box;
+}
+body{
+background-image: url(../imagenes/alas.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 330vh;
+}
+.content-all{
+	width: 210px;
+	margin: auto;
+	perspective: 1000px;
+	position: relative;
+	margin-top: 50px;
+
+}
+
+
+.contenedor-bebida{
+	width: 100%;
+	position: absolute;
+	animation: rotar 15s infinite linear;
+	transform-style:preserve-3d;
+
+}
+.contenedor-bebida:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.contenedor-bebida figure{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: 0px 0px 0.5px 0px black;
+	transition: all 100ms;
+}
+.contenedor-bebida figure:hover{
+	box-shadow: 0px 0px 0.5px 0px black;
+	transition: all 100ms;
+}
+
+.contenedor-bebida figure:nth-child(1){transform: rotateY(0deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(2){transform: rotateY(60deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(3){transform: rotateY(120deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(4){transform: rotateY(180deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(5){transform: rotateY(240deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(6){transform: rotateY(300deg)
+	translateZ(300px);}
+	.contenedor-bebida figure:nth-child(7){transform: rotateY(360deg)
+	translateZ(300px);}
+   
+.contenedor-bebida img{
+	width: 100%;
+		transition: all 300ms;
+}
+.contenedor-bebida img:hover{
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar{
+	from{
+		transform: rotateY(0deg);
+
+	}to{
+		transform: rotateY(360deg);
+	}
+}
+
+h2{
+	background-color: #E8DAEF;
+	padding: 30px;
+	font-size: 100px;
+	font-family: cursive;
+}
+
