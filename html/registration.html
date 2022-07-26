@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Restaurant</title>
+
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="../css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="../css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="../css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="../js/sweetalert2.js"></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="../css/style1.css">
+
+</head>
+
+<body>
+	<script src="https://kit.fontawesome.com/7541ec7306.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/7541ec7306.js" crossorigin="anonymous"></script>
+	<form id="formulario" method="post" action="../php/registro.php">
+		<!-- Header -->
+		<header class="header full-box">
+			<div class="header-brand text-center full-box">
+				<a href="../html/index.html">
+					<img src="../imagenes/logo.jpeg" alt="logo" class="img-fluid">
+				</a>
+			</div>
+
+			<div class="header-options full-box">
+				<nav class="header-navbar full-box poppins-regular font-weight-bold">
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="../html/index.html">Inicio<span class="full-box"></span></a>
+						</li>
+						<li>
+							<a href="../html/menu.html">Menú<span class="full-box"></span></a>
+						</li>
+						<li>
+							<a href="../html/login.html">Login<span class="full-box"></span></a>
+						</li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+		</header>
+
+
+		<!-- Content -->
+		<div class="container container-web-page">
+			<h3 class="font-weight-bold poppins-regular text-uppercase">Crear cuenta</h3>
+			<p class="text-justify">Al crear una cuenta en nuestro sitio web usted acepta nuestros <a href="#">términos
+					y condiciones</a>. La información introducida en el formulario debe de ser clara, precisa y
+				legitima. Para crear una cuenta debe de llenar todos los campos que son obligatorios marcados con el
+				icono <i class="fab fa-font-awesome-alt"></i></p>
+			<hr>
+			<div class="row">
+				<div class="col-12">
+					<form class="div-bordered" action="" style="padding: 15px;">
+
+						<fieldset>
+							<legend><i class="far fa-address-card"></i> &nbsp; Información personal</legend>
+							<div class="container-fluid">
+								<div class="row">
+
+
+									<div class="col-12 col-md-4">
+										<div class="form-outline mb-4">
+											<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{4,35}"
+												class="form-control" name="cliente_nombre_reg" id="cliente_nombre"
+												maxlength="35">
+											<label for="cliente_nombre" class="form-label">Nombres <i
+													class="fab fa-font-awesome-alt"></i></label>
+											<input type="text" name="nombre" placeholder="Nombre" id="nombre"
+												onfocus="restaurar_nom();">
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend><i class="fas fa-user-lock"></i> &nbsp; Información de inicio de sesión</legend>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-12 col-md-4">
+										<div class="form-outline mb-4">
+											<input type="email" class="form-control" name="cliente_email_reg"
+												id="cliente_email" maxlength="47">
+											<label for="cliente_email" class="form-label">Email <i
+													class="fab fa-font-awesome-alt"></i></label>
+											<input type="text" name="correo" placeholder="ejem.milagro@gmail.com"
+												id="email" onfocus="restaurar_nom();">
+										</div>
+									</div>
+									<div class="col-12 col-md-4">
+										<div class="form-outline mb-4">
+											<input type="password" class="form-control" name="cliente_clave_1_reg"
+												id="cliente_clave_1" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100">
+											<label for="cliente_clave_1" class="form-label">Contraseña <i
+													class="fab fa-font-awesome-alt"></i></label>
+											<input type="text" name="pass" placeholder="minimo 10 caractares" id="pdw"
+												onfocus="restaurar_nom();">
+										</div>
+									</div>
+									<div class="col-12 col-md-4">
+										<div class="form-outline mb-4">
+											<input type="password" class="form-control" name="cliente_clave_2_reg"
+												id="cliente_clave_2" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100">
+											<label for="cliente_clave_2" class="form-label">Repetir contraseña <i
+													class="fab fa-font-awesome-alt"></i></label>
+											<input type="text" name="conf_pass" placeholder="minimo 10 caractares" id="pdw"
+												onfocus="restaurar_nom();">
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					
+						<p class="text-center" style="margin-top: 40px;">
+							<button type="submit" class="btn btn-info btn-sm"><a href="../php/login.php"> Crear cuenta
+								</a></button>
+						</p>
+					</form>
+						<p class="text-center">
+							<small>Los campos marcados con <i class="fab fa-font-awesome-alt"></i> son
+								obligatorios</small>
+						</p>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<ul class="list-unstyled">
+							<li>
+								<h5 class="font-weight-bold"><i class="far fa-copyright"></i> COPYRIGTH</h5>
+							</li>
+							<li> Todos los derechos reservados </li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4">
+						<ul class="list-unstyled">
+							<li>
+								<h5 class="font-weight-bold">METEPEC</h5>
+							</li>
+							<li><i class="fas fa-map-marker-alt fa-fw"></i> Orquidia #30,52176 Metepec,Estado de
+								México,Méxic</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4">
+						<ul class="list-unstyled">
+							<li>
+								<h5 class="font-weight-bold">Siguenos en:</h5>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/El-Milagro-Caf%C3%A9-105016778599259/"
+									class="footer-link" target="_blank">
+									<i class="fa-brands fa-facebook-f"></i> Facebook
+								</a>
+							</li>
+
+							<li>
+								<a href="https://instagram.com/el_milagro_cafe?utm_medium=copy_link" class="footer-link"
+									target="_blank">
+									<i class="fa-brands fa-instagram"></i>
+									Instagram
+								</a>
+
+
+							</li>
+
+							<li>
+							<h5 class="font-weight-bold"> Contactanos:
+						</li>
+						li> <i class="fas fa-phone-square"></i> Telefono </li>
+<li><i class="fa-brands fa-whatsapp"></i><a
+		href="https://api.whatsapp.com/send?phone=+527291020228&text=Hola buenas tardes Nombre:     Telefono:    ">(729)1020228</a>
+</li>
+</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- MDBootstrap V5 -->
+		<script src="mdb.min.js"></script>
+
+		<!-- General scripts -->
+		<script src="main.js"></script>
+</body>
+
+</html>

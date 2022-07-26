@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu de comida</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="../css/normalize.css">
+    
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="../css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="../css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="../js/sweetalert2.js"></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="../css/style1.css">
+		<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+	
+	<header class="container-fluid bg-dark position-sticky top-0">
+		<script src="https://kit.fontawesome.com/7541ec7306.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7541ec7306.js" crossorigin="anonymous"></script>
+        
+            <!-- Header -->
+           
+                
+    
+                <div class="header-options full-box">
+                    <nav class="header-navbar full-box poppins-regular font-weight-bold">
+                        <ul class="list-unstyled full-box">
+                            <li>
+                                <a href="../html/index.html">Inicio<span class="full-box"></span></a>
+                            </li>
+                            <li>
+                                <a href="../html/menu.html">Menú<span class="full-box"></span></a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </header>
+		<ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+			<li class="nav-item text-primary" role="presentation">
+				<a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+					type="button" role="tab" aria-controls="pills-home" aria-selected="true">¿Quienes somos?</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+					type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Platillos</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+					type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+			</li>
+		</ul>
+	</header>
+	<div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+		Producto añadido al carrito!
+	</div>
+	<div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+		Producto removido!
+	</div>
+	  
+
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><h1>En Milagro Café encontraras un lugar lleno de magia en cada uno de sus rincones y mucho sabor en cada platillo. Un lugar cálido, agradable y con precios accesibles ideal para compartir momentos especiales con tus seres queridos.</h1> 1
+		</div>
+		<div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+			<h3>Cada platillo incuye desayuno completo:<br>
+			* Cafe <br>
+			* Jugo de fruta de temporada <br>
+			* Pan con mantequilla y azucar <br>
+			+ El platillo a elegir </h3>
+			<h2 class="h4 m-4 text-primary">Platillos</h2>
+			<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+				<div class="col d-flex justify-content-center-mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">ENCHILADAS VERDES</h5>
+						<img src="../imagenes/enchi.png" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Las enchiladas verdes se preparan con tomate, además de llevar cilantro o epazote en su preparación.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">ENMOLADAS</h5>
+						<img src="../imagenes/enmo.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Preparación hecha con tortillas de maíz bañadas con mole poblano y están rellenas de pollo deshebrado.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">ENMOLADAS CON PLATANO MACHO</h5>
+						<img src="../imagenes/enmolapa.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Tortilla de maiz rellena de plátano macho y cubierta con mole crema y cebolla morada.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">ORDEN DE TACOS AL GUSTO</h5>
+						<img src="../imagenes/tacos.jpeg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description"> Riquísimos tacos de bistec con abundante carne, una sola tortilla de maíz en tamaño mediano. Los acompañamos de cebolla guisada</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">CLUB SANDWITCH</h5>
+						<img src="../imagenes/club.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Sandwich de pollo arreglado, tocineta, jamón de cerdo y queso tipo americano. Acompañado de tomate, kale y un aderezo especial</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">COSTRAS</h5>
+						<img src="../imagenes/costra.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Consiste en una tortilla crujiente o semicrujiente de queso. En un comal o una plancha</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">CHILAQUILES ROJOS</h5>
+						<img src="../imagenes/chila.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Guiso compuesto de tortillas de maíz , cortadas en tiras o triángulos , fritas y , posteriormente , cocidas en salsa de chile .</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">PAPAS FRITAS</h5>
+						<img src="../imagenes/papas.png" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">papas que se preparan cortándose en forma de bastones y friéndolas en aceite caliente hasta que queden doradas, crujientes para luego retirarlas del aceite y luego sazonarlas con sal.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">HAMBURGUESA PEQUEÑA</h5>
+						<img src="../imagenes/pequeña.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Se presenta en un pan ligero partido en dos que posee forma de óvalo. Suele estar acompañada de aros de cebolla, hojas de lechuga, alguna rodaja de tomate, láminas de encurtidos y papas fritas.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						  <button ><a href="../html/ingredienteshambur.html">Detalles</a></button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">HAMBURGUESA MEDIANA</h5>
+						<img src="../imagenes/media.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description"> hecho a base de carne molida o de origen vegetal,​ aglutinada en forma de filete cocinado a la parrilla o a la plancha,</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">ENCHILADAS MINERAS</h5>
+						<img src="../imagenes/mineras.2.jpeg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Platillo preparado con tortillas de maíz pasadas por una salsa de chile guajillo; se fríen en manteca de cerdo, se rellenan con queso ranchero desmoronado y cebolla picada</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">Omelette de flor de calabaza</h5>
+						<img src="../imagenes/flor.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Para preparar tu exquisito omelette, en una sartén a fuego bajo coloca una cucharadita de aceite de coco, flores de calabaza, sal y pimienta</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">HUEVOS CON JAMON</h5>
+						<img src="../imagenes/huevo.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Concretamente los huevos revueltos, a los que acompañan el chorizo, jamón y el tocino de cerdo.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">MOLLETES</h5>
+						<img src="../imagenes/molle.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">platillo con base de bolillo tostado y varios ingredientes salados o dulces. Se preparan haciendo un corte longitudinal a un bolillo, tomando cada mitad y poniéndola en el comal o en el horno para calentarlo y tostarlo.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 70.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">SANDWITCH MONTECRISTO</h5>
+						<img src="../imagenes/monte.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Entre dos rebanadas de pan, ponemos jamón York, queso suizo y pavo en lonchas</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">TECOLOTAS</h5>
+						<img src="../imagenes/tecolotas.jpeg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Los tecolotes son un híbrido entre molletes gratinados y una torta de chilaquiles picosos. Son perfectos para el desayuno</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 110.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">JUEGO DE NARANJA</h5>
+						<img src="../imagenes/jugo.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">formado agua, azúcares, ácidos orgánicos, sales minerales, vitaminas y pigmentos</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 25.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">COCA COLA 600ML</h5>
+						<img src="../imagenes/coca.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 30.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">TAZA DE CAFE</h5>
+						<img src="../imagenes/taza.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">bebida que se obtiene a partir de los granos tostados y molidos de los frutos de la planta del café </p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 20.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">TAZA DE TE</h5>
+						<img src="../imagenes/te.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description"> Su sabor es fresco, ligeramente amargo y astringente; este gusto es agradable para mucha gente.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 25.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">COCA COLA SIN AZUCAR 600ML</h5>
+						<img src="../imagenes/sinazucar.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 30.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">COCA COLA 400ML</h5>
+						<img src="../imagenes/coca400.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 25.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">CAFE CAPUCHINO</h5>
+						<img src="../imagenes/capu.jpeg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description"> contiene expreso, vapor y espuma de leche a partes iguales. La taza de un capuchino es más pequeña que la taza del café latte</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 40.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div><div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">COCA COLA FAMILIAR</h5>
+						<img src="../imagenes/cocafam.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">es una bebida azucarada gaseosa vendida a nivel mundial en tiendas, restaurantes y máquinas expendedoras</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 55.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">PASTEL SAGGER</h5>
+						<img src="../imagenes/sagger.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">tarta de origen austríaco compuesta por dos partes de bizcocho de chocolate separadas por una fina capa de mermelada de albaricoque y recubierto por un glaseado de chocolate negro.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 40.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">PASTEL DE CHOCOLATE</h5>
+						<img src="../imagenes/pastelcho.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">El pastel de chocolate es uno de los postres más populares internacionalmente. El chocolate es una gran fuente de magnesio</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 40.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">BOLITAS DE CHOCOLATE</h5>
+						<img src="../imagenes/bolaschoco.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">hocolate de mesa elaborado de forma artesanal, con ingredientes 100% naturales conservando la receta milenaria de nuestros antepasados.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 35.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						  <button><a href="../html/ingredientestrufa.html">Detalles</a></button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">TRUFAS DE CHOCOLATE</h5>
+						<img src="../imagenes/bolitas.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description"> dulce con aspecto y sabor similar al bombón pero elaborado con una mezcla de chocolate negro fundido </p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 35.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center-mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">PASTEL DE FERRERO</h5>
+						<img src="../imagenes/ferrero.jfif" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Pan sabor chocolate con relleno de queso crema y avellanas tostadas, cubierto con betún de nutella, decorado con chocolates Ferrero Rocher.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 45.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">CREPAS DE NUTELLA</h5>
+						<img src="../imagenes/crepas (2).jpeg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Una crepa es un tipo de masa cocinada muy delgada a base de harina de trigo en forma de disco.</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 45.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">HOT CAKES</h5>
+						<img src="../imagenes/hot.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">Básicamente los hotcakes son un pan plano de origen ruso dulce cuya masa base contiene usualmente leche, mantequilla, huevos, harina, levadura,</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 50.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mb-4">
+					<div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+						<h5 class="card-title pt-2 text-center text-primary">PASTEL DE QUESO</h5>
+						<img src="../imagenes/queso.jpg" class="card-img-top" alt="...">
+						<div class="card-body "> 
+						  <p class="card-text text-white-50 description">es un postre muy popular desde el siglo XX hecho a base de ricota, requesón, queso quark</p>
+						  <h5 class="text-primary">Precio:<span class="precio">$ 40.00</span></h5>
+						  <div class="d-grid gap-2">
+						  <button class="btn btn-primary button">Añadir al carrito</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+		2</div>
+		</div>
+		<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+			<br>
+
+			<table class="table table-dark table-hover">
+				<thead>
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">Productos</th>
+					<th scope="col">Precio</th>
+					<th scope="col">Cantidad</th>
+				  </tr>
+				</thead>
+				<tbody class="tbody">
+				 
+				  
+				</tbody>
+			  </table> 
+		3
+		<br><br>
+		<div class="row mx-4">
+			<div class="col">
+				<h3 class="itemCartTotal">Total: 0</h3>
+			</div>
+			<div class="col d-flex justify-content-end">
+				<button class="btn btn-success" > <a href="../php/compra.PHP">COMPRAR</a></button>
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	
+
+
+	<footer class="bg-dark p-3 mt-5">
+		<p class="text-center m-0 text-muted">Milagro cafe JavaScript</p>
+
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<script src="../js/scripts.js"></script>
+</body>
+
+</html>
